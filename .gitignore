@@ -17,7 +17,6 @@ venv/
 # Environment variables
 .env
 *.env
-
 # Pytest cache
 .cache/
 .pytest_cach_
