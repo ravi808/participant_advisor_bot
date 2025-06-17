@@ -1,0 +1,23 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual Environments (Poetry creates .venv if configured)
+.venv/
+env/
+venv/
+
+# Poetry lock file (optional to ignore if you want reproducible builds)
+# poetry.lock
+
+# Environment variables
+.env
+*.env
+*.env.example
+# Pytest cache
+.cache/
+.pytest_cach_
