@@ -1,5 +1,11 @@
 from models.config import settings
 
+import secrets
+from pathlib import Path
+
+token = secrets.token_urlsafe(32)
+
+
 print("✅ Loaded configuration:")
 print(f"OPENAI_API_KEY: {'✅' if settings.OPENAI_API_KEY else '❌'}")
 print(f"SECRET_KEY: {'✅' if settings.SECRET_KEY else '❌'}")

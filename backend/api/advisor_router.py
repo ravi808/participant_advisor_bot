@@ -7,7 +7,7 @@ from services.agentic_handler import handle_agentic_query
 router = APIRouter()
 
 @router.post("/query")
-def handle_query(query: AdvisorQuery, authorized: bool = Depends(verify_token)):
+def handle_query(query: AdvisorQuery):
     if "grant" in query.query.lower():
         return {"response": query_llm(query.query)}
     else:
