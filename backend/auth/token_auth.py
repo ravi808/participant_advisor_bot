@@ -1,4 +1,4 @@
-from fastapi import Header, HTTPException, Depends
+from fastapi import Header, HTTPException
 from models.config import settings
 
 def verify_token(authorization: str = Header(...)):
