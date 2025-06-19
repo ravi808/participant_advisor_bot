@@ -54,8 +54,7 @@ participant_advisor_bot/
     └── .gitignore
     └── Dockerfile
     └── pyproject.toml
-    └── requirements.txt    
-├── .env.example
+    └── requirements.txt
 ├── Dockerfile
 ├── docker-compose.yml
 └── .dockerignore
