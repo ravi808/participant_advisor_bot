@@ -21,34 +21,44 @@ An AI-powered assistant for equity management built with **FastAPI**, **Streamli
 
 ```
 participant_advisor_bot/
-├── main.py
-├── api/
-│   └── advisor_router.py
-├── auth/
-│   └── token_auth.py
-├── data/
-│   ├── certent_client.py
-│   └── dummy_data.py
-├── logic/
-│   ├── processing.py
-│   └── vesting.py
-├── memory/
-│   └── session_store.py
-├── models/
-│   ├── config.py
-│   └── query_model.py
-├── services/
-│   ├── agentic_handler.py
-│   └── llm_agent.py
-├── ui/
-│   └── streamlit_app.py
-├── scripts/
-│   └── check_env.py
+├── backend/
+    ├── main.py
+    ├── agent/
+    │   └── agentic_handler.py
+    ├── api/
+    │   └── advisor_router.py
+    ├── auth/
+    │   └── token_auth.py
+    ├── data/
+    │   ├── certent_client.py
+    │   └── dummy_data.py
+    ├── logic/
+    │   ├── processing.py
+    │   └── vesting.py
+    ├── memory/
+    │   └── session_store.py
+    ├── models/
+    │   ├── config.py
+    │   └── query_model.py
+    ├── services/
+    │   ├── agentic_handler.py
+    │   └── llm_agent.py
+    ├── scripts/
+    │   └── check_env.py
+    ├── .gitignore
+    ├── Dockerfile
+    └── pyproject.toml
+    └── requirements.txt    
+├── frontend/
+    └── streamlit_app.py
+    └── .gitignore
+    └── Dockerfile
+    └── pyproject.toml
+    └── requirements.txt    
 ├── .env.example
-├── .gitignore
 ├── Dockerfile
 ├── docker-compose.yml
-└── pyproject.toml
+└── .dockerignore
 ```
 
 ---
