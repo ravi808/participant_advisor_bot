@@ -4,5 +4,7 @@ python-jose
 pydantic==1.10.22
 openai
 streamlit
-langchain
 dotenv
+langchain-openai
+langchain
+langchain-community

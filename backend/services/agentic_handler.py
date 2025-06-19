@@ -1,4 +1,4 @@
-from logic.processing import smart_infer
+from agent.agentic_handler import run_agentic_query
 
 def handle_agentic_query(query: str) -> str:
-    return smart_infer(query)
+    return run_agentic_query(query)

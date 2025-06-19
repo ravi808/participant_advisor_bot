@@ -3,6 +3,7 @@
 # def query_llm(prompt: str) -> str:
 #     return f"[LLM Response]: {prompt} (🔑 {settings.OPENAI_API_KEY[:1]}***)"
 
+# TODO: remove commented code
 
 from data.dummy_data import defined_queries
 
