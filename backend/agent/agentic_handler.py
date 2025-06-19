@@ -19,21 +19,6 @@ def simulate_tax_scenario(input_str: str) -> str:
         return f"Estimated tax: ${estimated_tax:.2f}"
     except Exception as e:
         return f"Error parsing input: {str(e)}"
-# @tool
-# def get_stock_price(symbol: str) -> str:
-#     return "120"
-
-# @tool
-# def simulate_tax_scenario(input_str: str) -> str:
-#     try:
-#         # Parse input string as JSON or comma-separated values
-#         data = json.loads(input_str)
-#         grant_units = data["grant_units"]
-#         sale_price = data["sale_price"]
-#         estimated_tax = (grant_units * sale_price) * 0.3
-#         return f"Estimated tax: ${estimated_tax:.2f}"
-#     except Exception as e:
-#         return f"Error parsing input: {str(e)}"
 
 tools = [get_stock_price, simulate_tax_scenario]
 llm = OpenAI(temperature=0)

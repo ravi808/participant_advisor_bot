@@ -17,7 +17,3 @@ def handle_query(query: AdvisorQuery):
         return {"response": query_llm(query.query)}
     else:
         return {"response": run_agentic_query(query.query)}
-    # if "grant" in query.query.lower():
-    #     return {"response": query_llm(query.query)}
-    # else:
-    #     return {"response": handle_agentic_query(query.query)}
